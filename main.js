@@ -12,9 +12,9 @@ const passwordAutorizado = "messi";
 
 for(let i=0 ;i<2 ; i++) {
     if(passwordUsuario ==passwordAutorizado) {
-        console.log("claro que seeeee");
+        alert("claro que seeeee");
         break;}
-        else{ passwordUsuario = prompt ("Bue, crei que entendias algo de futbol.Disculpame");
+        else{ passwordUsuario = prompt ("Sin querer escribiste otro nombre en lugar de Messi");
     }
 }
 
