@@ -3,6 +3,11 @@ alert ("Se viene el mundial de Qatar, asique nada mas lindo que ver a tu selecci
 let pais = prompt("De que pais vas a ver a tu seleccion? (Arg, Bra, Uru, Ecu o Chi)");
 let cuotas = parseInt (prompt ("En cuantas cuotas lo pagarias?"));
 
+let dolarpaises = [" Dolar Arg $285 "," Dolar Bra R5.17 ", " Dolar Uru $40.81", " Dolar Ecu US$1 ", " Dolar Chile $909.5 " ];
+
+let chileNoVaAlMundial = dolarpaises.pop();
+
+
 while(pais != "Arg" && pais != "Bra" && pais != "Uru" && pais != "Ecu" && pais != "Chi"){pais = prompt("De que pais vas a ver a tu seleccion? (Arg, Bra, Uru, Ecu o Chi)");}
 
 switch(pais){
@@ -26,6 +31,7 @@ switch(pais){
         break;
     
 }
+alert(dolarpaises);
 
 
 
