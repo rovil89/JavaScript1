@@ -109,13 +109,3 @@ switch (opcion) {
         alert("Revisa el menu por favor");
         break;
 }
-
-
-
-
-
-
-
-
-
-
