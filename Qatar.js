@@ -188,3 +188,28 @@ for(let equipo of grupoH){
     itemLista.innerText = equipo;
     listaH.appendChild(itemLista);
 }
+
+const btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+    alert("Ingresaste a los Octavos de Final");
+});
+
+const btn1 = document.getElementById("btn1");
+btn1.addEventListener("click", () => {
+    alert("Ingresaste a los Cuartos de Final");
+});
+
+const btn2 = document.getElementById("btn2");
+btn2.addEventListener("click", () => {
+    alert("Ingresaste a las Semis Finales");
+});
+
+const btn3 = document.getElementById("btn3");
+btn3.addEventListener("click", () => {
+    alert("Ingresaste a la Final");
+});
+
+const copa = document.getElementById("copa");
+copa.onmousemove = () => {
+    console.log("Pasaste el mouse por la copa");
+}

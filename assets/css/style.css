@@ -2,3 +2,64 @@ body{
 background-image: url(../img/clasificados\ qatar.jpg);
 background-size: cover ;
 background-attachment: fixed;}
+
+.titulo{
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    text-decoration-line: underline;
+}
+.primeros{
+    text-align:center;
+    font-size: large;
+    display: flex;
+    line-height: 30px;
+}
+.grupo{
+    margin-left: 25px;
+    margin-top: 70px;
+
+}
+.copa{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 20%;
+    
+}
+.fases{
+    margin-top: 10px;
+    margin-left: 25%;
+    
+}
+.bt{
+    border-radius: 3px;
+    border: 2px solid black;
+    margin: 2px;
+    color: wheat;
+    background-color: black ;
+
+}
+.radio{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 0%;
+}
+.opc{
+    margin: 15px;
+    text-align:left;
+}
+.opc1{
+    display: flex;
+    flex-direction: row;
+}
+.btn2{
+    margin-left: 35%;
+}
+.copa1{
+    margin-left: 35px;
+}
