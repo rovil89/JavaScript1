@@ -110,6 +110,8 @@ switch (opcion) {
         break;
 }
 
+//Dom grupos
+
 const grupoA = ["Qatar", "Ecuador", "Senegal", "Paises Bajos"];
 
 const listaA = document.getElementById("listaA");
@@ -189,6 +191,8 @@ for(let equipo of grupoH){
     listaH.appendChild(itemLista);
 }
 
+// Botones fases finales
+
 const btn = document.getElementById("btn");
 btn.addEventListener("click", () => {
     alert("Ingresaste a los Octavos de Final");
@@ -209,7 +213,18 @@ btn3.addEventListener("click", () => {
     alert("Ingresaste a la Final");
 });
 
+//Evento onmousemove
+
 const copa = document.getElementById("copa");
 copa.onmousemove = () => {
     console.log("Pasaste el mouse por la copa");
 }
+
+//Botones campeon
+const boton = document.querySelectorAll("button");
+
+boton.forEach(function (item) {
+    item.addEventListener("click", function(){
+        item.style.backgroundColor = item.dataset.color;
+    });
+});

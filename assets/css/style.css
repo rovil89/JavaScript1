@@ -9,6 +9,12 @@ background-attachment: fixed;}
     font-size: x-large;
     text-decoration-line: underline;
 }
+h2{
+    color: rgb(78, 49, 49);
+    text-align: start;
+    font-size: x-large;
+    text-decoration-line: underline;
+}
 .primeros{
     text-align:center;
     font-size: large;
@@ -22,44 +28,42 @@ background-attachment: fixed;}
 }
 .copa{
     height: 30%;
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    margin-left: 20%;
-    
 }
 .fases{
     margin-top: 10px;
-    margin-left: 25%;
+    padding: 0%;
+    align-self: center;
+    
     
 }
+
 .bt{
     border-radius: 3px;
     border: 2px solid black;
-    margin: 2px;
+    margin:3px;
     color: wheat;
     background-color: black ;
 
 }
-.radio{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    margin-left: 0%;
-}
-.opc{
-    margin: 15px;
-    text-align:left;
+.inp{
+    margin-left: 50%;
 }
 .opc1{
     display: flex;
     flex-direction: row;
 }
 .btn2{
-    margin-left: 35%;
+    margin-left: 30%;
+    margin-top: 15px;
 }
 .copa1{
-    margin-left: 35px;
+    margin-left: 10%;
+}
+.cajabot{
+align-items: center;
+justify-content: center;
 }
