@@ -30,7 +30,7 @@
         <br>
     </div>
     
-
+    
     <div class="copa">
         
         <div class="fases">
@@ -43,17 +43,51 @@
             </div>
         </div>
         <div class="cajabot">
-            <h2>De que grupo sale el equipo campeon</h2>
-            <button data-color="red" id="btc">Grupo A</button>
-            <button data-color="red" id="btc">Grupo B</button>
-            <button data-color="red" id="btc">Grupo C</button>
-            <button data-color="red" id="btc">Grupo D</button>
-            <button data-color="red" id="btc">Grupo E</button>
-            <button data-color="red" id="btc">Grupo F</button>
-            <button data-color="red" id="btc">Grupo G</button>
-            <button data-color="red" id="btc">Grupo H</button>
+            <h2 class="hcaja">De que grupo sale el equipo campeon</h2>
+            <button data-color="red" class="bt" id="btc">Grupo A</button>
+            <button data-color="red" class="bt" id="btc">Grupo B</button>
+            <button data-color="red" class="bt" id="btc">Grupo C</button>
+            <button data-color="red" class="bt" id="btc">Grupo D</button>
+            <button data-color="red" class="bt" id="btc">Grupo E</button>
+            <button data-color="red" class="bt" id="btc">Grupo F</button>
+            <button data-color="red" class="bt" id="btc">Grupo G</button>
+            <button data-color="red" class="bt" id="btc">Grupo H</button>
         </div>
     </div>
+
+    <h2 class="formulario">Pronóstico</h2>
+    
+        <form class="formulario" id="formulario">
+            <label class="formu" for="nombre">Nombre y Apellido</label>
+            <input class="formu" id="nombre" type="text">
+            <br><br>
+            <label class="formu" for="campeon">Pais Camepeon: </label>
+            <input class="formu" id="campeon" type="text">
+            <br><br>
+
+            <label class="formu" for="subCampeon">Pais Sub-Campeon: </label>
+            <input class="formu" id="subCampeon" type="text">
+            <br><br>
+
+            <label class="formu" for="tercero">Pais Tercero: </label>
+            <input class="formu" id="tercero" type="text">
+            <br><br>
+
+            <label  class="formu" for="figura">Figura del Mundial</label>
+            <select class="formu" name="figura" id="figura">
+                <option value="Messi">Messi</option>
+                <option value="Mbappe">Mbappe</option>
+                <option value="Cristiano">Cristiano</option>
+                <option value="Neymar">Neymar</option>
+            </select>
+            <br><br>
+            <button class="btf">Enviar Pronostico</button>
+        </form>
+        <button class="btf2" id="verPronosticos">Ver Pronósticos</button>
+        <div id="contenedorPronosticos"></div>
+
+
     <script src="Qatar.js"></script>
+    <script src="formulario.js"></script>
 </body>
 </html>

@@ -23,22 +23,24 @@ h2{
 }
 .grupo{
     margin-left: 25px;
-    margin-top: 70px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
 
 }
 .copa{
     height: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 10px;
+    justify-content: end;
+    margin: 30px;
+    margin-top: 50px;
+    
 }
 .fases{
-    margin-top: 10px;
     padding: 0%;
     align-self: center;
-    
-    
 }
 
 .bt{
@@ -66,4 +68,38 @@ h2{
 .cajabot{
 align-items: center;
 justify-content: center;
+margin-left: 25%;
+margin-top: 20px;
+}
+.hcaja{
+    margin-left: 80px;
+    color: black;
+    font-size: x-large;
+}
+
+.formulario{
+    margin-left: 15%;
+    margin: 30px;
+}
+.formu{
+    font-size: large;
+}
+
+.btf{
+    border-radius: 5px;
+    border: 2px solid black;
+    margin:3px;
+    color: wheat;
+    background-color: black ;
+    font-size: medium;
+}
+.btf2{
+    border-radius: 5px;
+    border: 2px solid black;
+    margin:3px;
+    color: wheat;
+    background-color: black ;
+    font-size: medium;
+    margin-left: 30px;
+    margin-top: -10px;
 }
