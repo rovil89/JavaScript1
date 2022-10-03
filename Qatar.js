@@ -1,29 +1,88 @@
-// Conmebol en Qatar 2022
+//Formulario
 
-class Conmebol {
-    constructor (pais, primero, segundo, tercero) {
-        this.pais = pais;
-        this.primero = primero;
-        this.segundo = segundo;
-        this.tercero = tercero;
+class Pronostico{
+    constructor(nombreApellido, paisCampeon, paisSubcampeon, paisTercero, paisCuarto, jugadorFigura){
+        this.nombreApellido = nombreApellido;
+        this.paisCampeon = paisCampeon;
+        this.paisSubcampeon = paisSubcampeon;
+        this.paisTercero = paisTercero;
+        this.paisCuarto = paisCuarto;
+        this.jugadorFigura = jugadorFigura;
+    }
+}
+const pronosticos =[];
+
+//Operador Ternario
+let temperaturaQatar = 50
+
+temperaturaQatar >= 40 ? console.log("Quien fue el demente que eligió a Qatar como sede con mas de 40 grados de temperatura") : console.log("Aca podria hacer el mismo calor");
+
+//Operador Logico
+
+if(temperaturaQatar > 45) console.log("Bienvenidos al infierno Qatarí");
+
+
+
+
+//LocarlStorage y JSON
+if(localStorage.getItem("pronosticos")){
+    let pronostico = JSON.parse(localStorage.getItem("pronosticos"));
+    for(let i = 0 ; i < pronostico.length; i++){
+        pronosticos.push(pronostico[i]);
     }
 }
 
-const Ecuador = new Conmebol ("Ecuador", "Qatar ", "Paises Bajos", "Senegal");
-const Argentina = new Conmebol ("Argentina", "Arabia Saudita", "Mexico", "Polonia");
-const Brasil = new Conmebol ("Brasil", "Serbia", "Suiza", "Camerun");
-const Uruguay = new Conmebol ("Uruguay", "Corea del Sur", "Portugal", "Ghana");
-
-const arrayConmebol =[];
-
-arrayConmebol.push(Ecuador);
-arrayConmebol.push(Argentina);
-arrayConmebol.push(Brasil);
-arrayConmebol.push(Uruguay);
-
-console.log(arrayConmebol);
 
 
+const formulario = document.getElementById("formulario");
+formulario.addEventListener("submit",(e) =>{
+    e.preventDefault();
+    agregarPronostico();
+})
+
+function agregarPronostico(){
+    const nombre = document.getElementById("nombre").value;
+    const campeon = document.getElementById("campeon").value;
+    const subCampeon = document.getElementById("subCampeon").value;
+    const tercero = document.getElementById("tercero").value;
+    const cuarto = document.getElementById("cuarto").value;
+    const figura = document.getElementById("figura").value;
+
+
+const nuevoPronostico = new Pronostico (nombre, campeon, subCampeon, tercero, cuarto,  figura);
+pronosticos.push(nuevoPronostico);
+
+//LocalStorage y JSON
+localStorage.setItem("pronosticos",JSON.stringify(pronosticos));
+
+formulario.reset();
+}
+
+const contenedorPronosticos = document.getElementById("contenedorPronosticos");
+const verPronosticos = document.getElementById("verPronosticos");
+
+verPronosticos.addEventListener("click", () => {
+    mostrarPronosticos();
+});
+
+function mostrarPronosticos(){
+    contenedorPronosticos.innerHTML = "";
+    pronosticos.forEach(pronostico => {
+        const div = document.createElement("div");
+        div.innerHTML=`
+                        <div>
+                            <p> Nombre y Apellido: ${pronostico.nombreApellido}</p>
+                            <p> Pais Campeón: ${pronostico.paisCampeon}</p>
+                            <p> Pais Sub-Campeon: ${pronostico.paisSubcampeon}</p>
+                            <p> Pais Tercero: ${pronostico.paisTercero}</p>
+                            <p> Pais Cuarto: ${pronostico.paisCuarto}</p>
+                            <p> Figura Mundial: ${pronostico.jugadorFigura}</p>
+                        </div>
+                        <br>
+                    `;
+        contenedorPronosticos.appendChild(div);
+    })
+}
 //Dom grupos
 
 const grupoA = ["Qatar", "Ecuador", "Senegal", "Paises Bajos"];

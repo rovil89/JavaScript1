@@ -20,6 +20,7 @@ h2{
     font-size: large;
     display: flex;
     line-height: 30px;
+    background-color: rgba(240, 248, 255, 0.486);
 }
 .grupo{
     margin-left: 25px;
