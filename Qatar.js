@@ -158,22 +158,42 @@ for(let equipo of grupoH){
 
 const btn = document.getElementById("btn");
 btn.addEventListener("click", () => {
-    console.log("Ingresaste a los Octavos de Final");
+    Toastify({
+        text:"Ingresaste a los Octavos de Final",
+        duration: 1500,
+        position: "right",
+        backgroundColor: "#080707",
+        }).showToast();
 });
 
 const btn1 = document.getElementById("btn1");
 btn1.addEventListener("click", () => {
-    console.log("Ingresaste a los Cuartos de Final");
+    Toastify({
+        text:"Ingresaste a los Cuartos de Final",
+        duration: 1500,
+        position: "right",
+        backgroundColor: "#080707",
+        }).showToast();
 });
 
 const btn2 = document.getElementById("btn2");
 btn2.addEventListener("click", () => {
-    console.log("Ingresaste a las Semis Finales");
+    Toastify({
+        text:"Ingresaste a la Semi-Final",
+        duration: 1500,
+        position: "right",
+        backgroundColor: "#080707",
+        }).showToast();
 });
 
 const btn3 = document.getElementById("btn3");
 btn3.addEventListener("click", () => {
-    console.log("Ingresaste a la Final");
+    Toastify({
+        text:"Ingresaste a la Final",
+        duration: 1500,
+        position: "right",
+        backgroundColor: "#080707",
+        }).showToast();
 });
 
 //Evento onmousemove
@@ -195,5 +215,24 @@ boton.forEach(function (item) {
 // Operador Logico
 grupoC === "Grupo de la muerte" && console.log("Estamos al horno")
 
-let sinPronosticos = pronosticos.length === 0 && "No hay ningun pronostico realizado";
+let sinPronosticos = pronosticos.length === 0 && "No hay ningún pronóstico realizado";
 console.log(sinPronosticos);
+
+let temperaturaQatar = 50;
+temperaturaQatar >= 50 && console.log("Bienvenidos al infierno Qatarí arriba de los 50° de TEMPERATURA");
+
+//Sweet Alert
+
+const btform = document.getElementById ("btform");
+btform.addEventListener("click", () => {
+    Swal.fire({
+        position: 'center',
+        title: 'Pronostico enviado',
+        showConfirmButton: false,
+        timer: 2500,
+        imageUrl: "https://dosisfutbolera.com/wp-content/uploads/2022/06/COPA.jpg",
+        icon: 'success',
+        background: "#080707",
+        color: "#FCF9F9"
+    })
+})
