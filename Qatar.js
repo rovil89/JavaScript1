@@ -12,19 +12,7 @@ class Pronostico{
 }
 const pronosticos =[];
 
-//Operador Ternario
-let temperaturaQatar = 50
-
-temperaturaQatar >= 40 ? console.log("Quien fue el demente que eligió a Qatar como sede con mas de 40 grados de temperatura") : console.log("Aca podria hacer el mismo calor");
-
-//Operador Logico
-
-if(temperaturaQatar > 45) console.log("Bienvenidos al infierno Qatarí");
-
-
-
-
-//LocarlStorage y JSON
+//LocalStorage y JSON
 if(localStorage.getItem("pronosticos")){
     let pronostico = JSON.parse(localStorage.getItem("pronosticos"));
     for(let i = 0 ; i < pronostico.length; i++){
@@ -164,6 +152,8 @@ for(let equipo of grupoH){
     listaH.appendChild(itemLista);
 }
 
+
+
 // Botones fases finales
 
 const btn = document.getElementById("btn");
@@ -201,3 +191,9 @@ boton.forEach(function (item) {
         item.style.backgroundColor = item.dataset.color;
     });
 });
+
+// Operador Logico
+grupoC === "Grupo de la muerte" && console.log("Estamos al horno")
+
+let sinPronosticos = pronosticos.length === 0 && "No hay ningun pronostico realizado";
+console.log(sinPronosticos);
