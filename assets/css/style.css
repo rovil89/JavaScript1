@@ -15,6 +15,17 @@ h2{
     font-size: x-large;
     text-decoration-line: underline;
 }
+h3{
+    color: rgb(4, 95, 18);
+    text-align: start;
+    font-size: x-small;
+    text-decoration-line: underline;
+}
+h4{
+    color: rgb(22, 4, 90);
+    text-align: start;
+    font-size: x-small;
+}
 .primeros{
     text-align:center;
     font-size: large;
