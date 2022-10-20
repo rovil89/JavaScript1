@@ -249,9 +249,8 @@ setInterval(() => {
             dolar.innerHTML=`
             <h3>Cotización Dolar para quienes viajan al mundial</h3>
             <br>
-            <h4>Dolar Oficial: ${oficial}</h4>
-            <h4>Dolar Blue: ${blue}</h4>
-            <h4>Dolar Solidario: ${solidario}</h4>
+            <h4>Dolar Oficial Banco Nación: $${oficial}</h4>
+            <h4>Dolar Blue: $${blue}</h4>
             `
         })
         .catch(error=>console.error(error))
